@@ -1,0 +1,25 @@
+{
+  "policy_number": "WTI-107001",
+  "insured_name": "Chris Taylor",
+  "policy_purchase_date": "2026-08-01",
+  "trip_start": "2026-09-01",
+  "trip_end": "2026-09-14",
+  "claim_type": "medical",
+  "incident_date": "2026-09-04",
+  "submission_date": "2026-09-20",
+  "claimed_amount": 980.0,
+  "declared_conditions": [],
+  "incident_description": "Asthma attack in Bali requiring emergency treatment.",
+  "attachments": [
+    {
+      "document_id": "doctor_letter",
+      "file": "doctor_letter.png",
+      "description": "Treating doctor's letter"
+    },
+    {
+      "document_id": "invoice_1",
+      "file": "invoice.png",
+      "description": "Clinic invoice"
+    }
+  ]
+}

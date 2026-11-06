@@ -1,0 +1,75 @@
+{
+  "run_id": "20261105T033028-dev-2415c0",
+  "case_id": "dev-003",
+  "status": "failed",
+  "prediction": null,
+  "payable_amount": null,
+  "decision": null,
+  "rejected_candidates": [],
+  "validation_history": [],
+  "referral_reasons": [],
+  "injection_findings": [],
+  "usage": [
+    {
+      "model": "gpt-5.4-nano",
+      "resolved_model": "gpt-5.4-nano-2026-03-17",
+      "purpose": "injection_screen:dev-003:form",
+      "input_tokens": 528,
+      "cached_input_tokens": 0,
+      "output_tokens": 48,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00016560000000000001,
+      "latency_s": 1.738
+    },
+    {
+      "model": "gpt-5.4-mini",
+      "resolved_model": "gpt-5.4-mini-2026-03-17",
+      "purpose": "image_transcription:dev-003:police_report",
+      "input_tokens": 542,
+      "cached_input_tokens": 0,
+      "output_tokens": 145,
+      "reasoning_tokens": 10,
+      "cost_usd": 0.001059,
+      "latency_s": 1.726
+    },
+    {
+      "model": "gpt-5.4-mini",
+      "resolved_model": "gpt-5.4-mini-2026-03-17",
+      "purpose": "image_transcription:dev-003:receipt_camera",
+      "input_tokens": 465,
+      "cached_input_tokens": 0,
+      "output_tokens": 120,
+      "reasoning_tokens": 38,
+      "cost_usd": 0.00088875,
+      "latency_s": 2.024
+    },
+    {
+      "model": "gpt-5.4-nano",
+      "resolved_model": "gpt-5.4-nano-2026-03-17",
+      "purpose": "injection_screen:dev-003:police_report",
+      "input_tokens": 462,
+      "cached_input_tokens": 0,
+      "output_tokens": 51,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00015615,
+      "latency_s": 1.31
+    },
+    {
+      "model": "gpt-5.4-nano",
+      "resolved_model": "gpt-5.4-nano-2026-03-17",
+      "purpose": "injection_screen:dev-003:receipt_camera",
+      "input_tokens": 408,
+      "cached_input_tokens": 0,
+      "output_tokens": 45,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00013785000000000002,
+      "latency_s": 1.295
+    }
+  ],
+  "calculations": [],
+  "policy_sections_read": [],
+  "policy_pages_viewed": [],
+  "error": "BadRequestError: Error code: 400 - Invalid schema for function 'calculate': context=('properties', 'unit'), $ref cannot have keywords {'description'}.",
+  "duration_s": 5.48,
+  "cost_usd": 0.002407
+}

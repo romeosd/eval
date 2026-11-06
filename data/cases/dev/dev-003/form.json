@@ -1,0 +1,24 @@
+{
+  "policy_number": "WTI-105002",
+  "insured_name": "Sam Lee",
+  "policy_purchase_date": "2026-04-01",
+  "trip_start": "2026-04-25",
+  "trip_end": "2026-05-15",
+  "claim_type": "luggage_theft",
+  "incident_date": "2026-05-01",
+  "submission_date": "2026-05-20",
+  "claimed_amount": 650.0,
+  "incident_description": "Camera stolen from a locked locker at my hostel.",
+  "attachments": [
+    {
+      "document_id": "police_report",
+      "file": "police_report.png",
+      "description": "Police report"
+    },
+    {
+      "document_id": "receipt_camera",
+      "file": "receipt.png",
+      "description": "Camera receipt"
+    }
+  ]
+}

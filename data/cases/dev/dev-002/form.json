@@ -1,0 +1,24 @@
+{
+  "policy_number": "WTI-104871",
+  "insured_name": "Alex Morgan",
+  "policy_purchase_date": "2026-03-15",
+  "trip_start": "2026-04-05",
+  "trip_end": "2026-04-25",
+  "claim_type": "luggage_theft",
+  "incident_date": "2026-04-10",
+  "submission_date": "2026-04-30",
+  "claimed_amount": 1200.0,
+  "incident_description": "My laptop was stolen from the safe in my locked hotel room while I was out.",
+  "attachments": [
+    {
+      "document_id": "police_report",
+      "file": "police_report.png",
+      "description": "Police report"
+    },
+    {
+      "document_id": "receipt_laptop",
+      "file": "receipt.png",
+      "description": "Laptop purchase receipt"
+    }
+  ]
+}

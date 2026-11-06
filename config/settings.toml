@@ -1,0 +1,106 @@
+# ---------------------------------------------------------------------------
+# Single source of configuration. Every tunable value lives here.
+# Paths are resolved relative to the project root (the parent of /config).
+# Secrets are NOT stored here: the API key is read from the env var named below
+# (or from a .env file in the project root).
+# ---------------------------------------------------------------------------
+
+[paths]
+policy_dir = "data/policy"          # one or more policy PDFs
+cases_dir = "data/cases"            # <split>/<case_id>/form.json + attachments
+labels_dir = "data/labels"          # <split>/<case_id>.json — never shown to the model
+cache_dir = ".cache"                # processed policy index + rendered page images
+cassette_dir = ".cassettes"         # recorded model calls (see [replay])
+runs_dir = "runs"                   # one immutable directory per run
+prompts_dir = "prompts"
+
+[openai]
+api_key_env = "OPENAI_API_KEY"
+request_timeout_s = 180
+max_retries = 3                     # SDK-level retries (429 / 5xx / connection errors)
+store = false                       # do not persist responses server-side
+
+# Model roles. Set these to whatever your assessment brief permits.
+# reasoning_effort: "none" | "low" | "medium" | "high" (omit for non-reasoning models)
+[models.adjudicator]
+name = "gpt-5.5"
+reasoning_effort = "medium"
+
+[models.judge]                      # verifies each finding is supported by its citations
+name = "gpt-5.4-mini"
+reasoning_effort = "low"
+
+[models.vision]                     # transcribes policy diagrams and application images
+name = "gpt-5.4-mini"
+reasoning_effort = "low"
+
+[models.injection_classifier]
+name = "gpt-5.4-nano"
+reasoning_effort = "low"
+
+[retrieval]
+mode = "tools"                      # "tools" (agentic navigation) | "full_context" (whole policy in prompt)
+search_top_k = 5
+image_detail = "high"               # "low" | "high" | "auto"
+
+[agent]
+max_tool_turns = 24                 # hard cap on model<->tool round trips per attempt
+max_attempts = 3                    # decision attempts; validation errors are fed back between attempts
+consensus_runs = 1                  # >1: independent runs must agree on outcome and amount, else REFER
+
+[validation]
+claim_support_check = true          # LLM judge per finding. Fail-closed: errors/timeouts = not supported
+judge_sees_diagram_images = true    # judge also receives the page image for cited diagram pages
+max_revalidations = 1               # re-run only the verifiers (not the agent) after an infrastructure failure
+citation_min_similarity = 88        # rapidfuzz partial_ratio (0-100) for quote-in-source checks
+judge_timeout_s = 90
+amount_tolerance = 0.01
+min_quote_chars = 12                # shorter quotes match too easily to prove anything
+
+[audit]
+tool_args_chars = 4000              # tool arguments kept in audit.jsonl
+tool_output_chars = 30000           # tool outputs kept in audit.jsonl (full policy sections fit)
+
+[security]
+heuristic_screen = true
+classifier_screen = true
+fail_closed = true                  # if content cannot be screened, the case is referred to a human
+extra_patterns = []                 # additional regexes treated as instruction-like content
+
+[loading]
+max_load_retries = 3
+retry_backoff_s = 0.5
+
+[run]
+concurrency = 4
+budget_usd = 15.0                   # hard stop for a single run (checked before every model call)
+require_pinned_models = false       # true: refuse aliases; set dated snapshot names in [models.*]
+
+# Record/replay of model calls. "record" stores every response keyed by a hash of the full
+# request; "replay" serves only recorded responses (no API key, no spend, a miss is an error).
+# Use replay to regression-test everything except the model and to reproduce a run exactly.
+[replay]
+mode = "off"                        # "off" | "record" | "replay"
+
+[eval]
+held_out_split = "test"             # runs on this split are counted; repeated use contaminates it
+
+[ingest]
+min_drawings_for_visual = 8         # vector drawing ops on a page that mark it as containing a diagram
+render_dpi = 144
+
+# USD per 1M tokens. PLACEHOLDERS — verify against current OpenAI pricing before trusting cost figures.
+[pricing."gpt-5.5"]
+input = 5.00
+cached_input = 0.50
+output = 30.00
+
+[pricing."gpt-5.4-mini"]
+input = 0.75
+cached_input = 0.075
+output = 4.50
+
+[pricing."gpt-5.4-nano"]
+input = 0.20
+cached_input = 0.02
+output = 1.25

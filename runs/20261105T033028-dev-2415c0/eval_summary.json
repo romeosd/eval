@@ -1,0 +1,163 @@
+{
+  "run_id": "20261105T033028-dev-2415c0",
+  "split": "dev",
+  "n_cases": 2,
+  "n_independent_groups": 2,
+  "partial": true,
+  "decision_accuracy": 0.0,
+  "self_decided_accuracy": null,
+  "amount_accuracy": null,
+  "mean_section_recall": 0.0,
+  "unsafe_approval_rate": 0.0,
+  "referral_rate": 0.0,
+  "forced_referral_rate": 0.0,
+  "failure_rate": 1.0,
+  "first_attempt_pass_rate": 0.0,
+  "total_cost_usd": 0.0048,
+  "mean_cost_usd": 0.0024,
+  "mean_duration_s": 5.33,
+  "cost_per_correct_usd": null,
+  "per_class": {
+    "APPROVE": {
+      "precision": null,
+      "recall": 0.0,
+      "support": 1
+    },
+    "DENY": {
+      "precision": null,
+      "recall": 0.0,
+      "support": 1
+    },
+    "REFER": {
+      "precision": null,
+      "recall": null,
+      "support": 0
+    }
+  },
+  "confusion": {
+    "APPROVE": {
+      "APPROVE": 0,
+      "DENY": 0,
+      "REFER": 0,
+      "NONE": 1
+    },
+    "DENY": {
+      "APPROVE": 0,
+      "DENY": 0,
+      "REFER": 0,
+      "NONE": 1
+    },
+    "REFER": {
+      "APPROVE": 0,
+      "DENY": 0,
+      "REFER": 0,
+      "NONE": 0
+    }
+  },
+  "categories": {
+    "infrastructure_failure": 2
+  },
+  "intervals": {
+    "decision_accuracy": {
+      "k": 0,
+      "n": 2,
+      "rate": 0.0,
+      "low": 0.0,
+      "high": 0.6576197760453506
+    },
+    "self_decided_accuracy": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "low": null,
+      "high": null
+    },
+    "amount_accuracy": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "low": null,
+      "high": null
+    },
+    "unsafe_approval_rate": {
+      "k": 0,
+      "n": 1,
+      "rate": 0.0,
+      "low": 0.0,
+      "high": 0.7934506882081973
+    },
+    "forced_referral_rate": {
+      "k": 0,
+      "n": 2,
+      "rate": 0.0,
+      "low": 0.0,
+      "high": 0.6576197760453506
+    },
+    "failure_rate": {
+      "k": 2,
+      "n": 2,
+      "rate": 1.0,
+      "low": 0.3423802239546494,
+      "high": 1.0
+    },
+    "first_attempt_pass_rate": {
+      "k": 0,
+      "n": 2,
+      "rate": 0.0,
+      "low": 0.0,
+      "high": 0.6576197760453506
+    }
+  },
+  "slices": {
+    "expected_outcome": {
+      "APPROVE": {
+        "k": 0,
+        "n": 1,
+        "rate": 0.0,
+        "low": 0.0,
+        "high": 0.7934506882081973
+      },
+      "DENY": {
+        "k": 0,
+        "n": 1,
+        "rate": 0.0,
+        "low": 0.0,
+        "high": 0.7934506882081973
+      }
+    },
+    "origin": {
+      "original": {
+        "k": 0,
+        "n": 2,
+        "rate": 0.0,
+        "low": 0.0,
+        "high": 0.6576197760453506
+      }
+    },
+    "injection": {
+      "absent": {
+        "k": 0,
+        "n": 2,
+        "rate": 0.0,
+        "low": 0.0,
+        "high": 0.6576197760453506
+      }
+    },
+    "diagram_rule": {
+      "needed": {
+        "k": 0,
+        "n": 2,
+        "rate": 0.0,
+        "low": 0.0,
+        "high": 0.6576197760453506
+      }
+    }
+  },
+  "failure_stages": {
+    "infrastructure": 2
+  },
+  "check_failures": {},
+  "tool_errors": {},
+  "held_out_runs": 0,
+  "model_drift": []
+}

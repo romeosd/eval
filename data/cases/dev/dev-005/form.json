@@ -1,0 +1,19 @@
+{
+  "policy_number": "WTI-106532",
+  "insured_name": "Jordan Kim",
+  "policy_purchase_date": "2026-05-20",
+  "trip_start": "2026-07-02",
+  "trip_end": "2026-07-16",
+  "claim_type": "travel_delay",
+  "incident_date": "2026-07-02",
+  "submission_date": "2026-07-20",
+  "claimed_amount": 300.0,
+  "incident_description": "My flight was delayed by about 20 hours.",
+  "attachments": [
+    {
+      "document_id": "airline_letter",
+      "file": "delay_letter.txt",
+      "description": "Airline delay confirmation"
+    }
+  ]
+}

@@ -1,0 +1,505 @@
+{
+  "run_id": "20261105T035017-dev-77753e",
+  "case_id": "dev-002",
+  "status": "decided",
+  "prediction": "DENY",
+  "payable_amount": null,
+  "decision": {
+    "case_id": "dev-002",
+    "outcome": "DENY",
+    "payable_amount": null,
+    "findings": [
+      {
+        "statement": "The theft occurred during the insured trip period and involved a laptop claimed as luggage/personal item theft.",
+        "policy_citations": [
+          {
+            "section_id": "travel-policy:3.4",
+            "page": 2,
+            "quote": "We pay for luggage and personal items stolen, lost or damaged during the trip, up\nto the limits in the benefit table. Theft claims must follow the process in 5.3."
+          }
+        ],
+        "evidence_citations": [
+          {
+            "document_id": "form",
+            "quote": "\"trip_start\": \"2026-04-05\",\n  \"trip_end\": \"2026-04-25\",\n  \"claim_type\": \"luggage_theft\",\n  \"incident_date\": \"2026-04-10\""
+          },
+          {
+            "document_id": "police_report",
+            "quote": "Theft discovered: 2026-04-10 14:00\nReport filed: 2026-04-10 21:30\nItem: laptop computer taken from locked hotel room safe."
+          }
+        ],
+        "calculation_ids": [
+          "calc-3",
+          "calc-4"
+        ]
+      },
+      {
+        "statement": "The supporting documents and timing requirements for a theft claim were evidenced: the police report was obtained within the required time, the claim was submitted within the claim deadline, and a receipt was provided for the laptop.",
+        "policy_citations": [
+          {
+            "section_id": "travel-policy:5.3",
+            "page": 4,
+            "quote": "Police report obtained within 24 hours\nof discovering the theft?"
+          },
+          {
+            "section_id": "travel-policy:5.1",
+            "page": 3,
+            "quote": "Claims must be submitted within 60 days after the incident date. Claims submitted\nlater than this are not payable."
+          },
+          {
+            "section_id": "travel-policy:5.2",
+            "page": 3,
+            "quote": "Receipts or proof of ownership are required for any item or expense over $100."
+          }
+        ],
+        "evidence_citations": [
+          {
+            "document_id": "police_report",
+            "quote": "Theft discovered: 2026-04-10 14:00\nReport filed: 2026-04-10 21:30"
+          },
+          {
+            "document_id": "form",
+            "quote": "\"incident_date\": \"2026-04-10\",\n  \"submission_date\": \"2026-04-30\""
+          },
+          {
+            "document_id": "receipt_laptop",
+            "quote": "Date: 2025-11-02\nUltraBook 14 laptop ............ $1,200.00\nPAID IN FULL"
+          }
+        ],
+        "calculation_ids": [
+          "calc-1",
+          "calc-6",
+          "calc-2",
+          "calc-7",
+          "calc-8"
+        ]
+      },
+      {
+        "statement": "The claim is not automatically referred because the claimed amount is not over the referral threshold and no material conflict in dates or amounts was identified.",
+        "policy_citations": [
+          {
+            "section_id": "travel-policy:5.4",
+            "page": 4,
+            "quote": "Claims with a total claimed amount over $10,000, or where documents conflict on a\nmaterial fact such as dates or amounts, are referred to a senior assessor and are\nnot decided automatically."
+          }
+        ],
+        "evidence_citations": [
+          {
+            "document_id": "form",
+            "quote": "\"claimed_amount\": 1200.0"
+          },
+          {
+            "document_id": "receipt_laptop",
+            "quote": "UltraBook 14 laptop ............ $1,200.00"
+          }
+        ],
+        "calculation_ids": [
+          "calc-5"
+        ]
+      },
+      {
+        "statement": "The unattended-items exclusion defeats the claim because the laptop was stolen from the hotel room safe while the insured was out, so it was not attended at the time of theft.",
+        "policy_citations": [
+          {
+            "section_id": "travel-policy:2.3",
+            "page": 1,
+            "quote": "Left where the insured person cannot see the item and is not in a position to\nprevent it being taken."
+          },
+          {
+            "section_id": "travel-policy:4.2",
+            "page": 3,
+            "quote": "We do not pay for luggage or personal items stolen while unattended."
+          },
+          {
+            "section_id": "travel-policy:5.3",
+            "page": 4,
+            "quote": "Was the item attended\nat the time of theft?\nNo\nDecline claim\n(see 4.2)"
+          }
+        ],
+        "evidence_citations": [
+          {
+            "document_id": "form",
+            "quote": "\"incident_description\": \"My laptop was stolen from the safe in my locked hotel room while I was out.\""
+          },
+          {
+            "document_id": "police_report",
+            "quote": "Item: laptop computer taken from locked hotel room safe."
+          }
+        ],
+        "calculation_ids": []
+      }
+    ],
+    "conflicts_identified": [],
+    "missing_information": [],
+    "confidence": "high",
+    "rationale": "Although the theft occurred during the trip and the police report, receipt, and submission timing requirements are evidenced, the policy requires theft claims to be declined if the item was not attended at the time of theft. The evidence states the laptop was in the hotel room safe while the insured was out, which meets the policy definition of unattended. The claim is therefore denied under the unattended-items exclusion."
+  },
+  "rejected_candidates": [],
+  "validation_history": [
+    {
+      "attempt": 1,
+      "checks_required": [
+        "task_identity",
+        "outcome_consistency",
+        "completeness",
+        "citation_presence",
+        "policy_citations",
+        "evidence_citations",
+        "quarantine",
+        "calculation_provenance",
+        "output_screen",
+        "claim_support"
+      ],
+      "checks_run": [
+        "task_identity",
+        "outcome_consistency",
+        "completeness",
+        "citation_presence",
+        "policy_citations",
+        "evidence_citations",
+        "quarantine",
+        "calculation_provenance",
+        "output_screen",
+        "claim_support"
+      ],
+      "issues": [],
+      "run": 0,
+      "passed": true
+    }
+  ],
+  "referral_reasons": [],
+  "injection_findings": [],
+  "usage": [
+    {
+      "model": "gpt-5.4-nano",
+      "resolved_model": "gpt-5.4-nano-2026-03-17",
+      "purpose": "injection_screen:dev-002:form",
+      "input_tokens": 538,
+      "cached_input_tokens": 0,
+      "output_tokens": 52,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00017260000000000002,
+      "latency_s": 2.146
+    },
+    {
+      "model": "gpt-5.4-nano",
+      "resolved_model": "gpt-5.4-nano-2026-03-17",
+      "purpose": "injection_screen:dev-002:receipt_laptop",
+      "input_tokens": 426,
+      "cached_input_tokens": 0,
+      "output_tokens": 56,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00015519999999999998,
+      "latency_s": 1.524
+    },
+    {
+      "model": "gpt-5.4-nano",
+      "resolved_model": "gpt-5.4-nano-2026-03-17",
+      "purpose": "injection_screen:dev-002:police_report",
+      "input_tokens": 448,
+      "cached_input_tokens": 0,
+      "output_tokens": 53,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00015585000000000002,
+      "latency_s": 1.541
+    },
+    {
+      "model": "gpt-5.5",
+      "resolved_model": "gpt-5.5-2026-04-23",
+      "purpose": "adjudicate:dev-002:run0:attempt1:turn1",
+      "input_tokens": 2343,
+      "cached_input_tokens": 0,
+      "output_tokens": 32,
+      "reasoning_tokens": 15,
+      "cost_usd": 0.012675,
+      "latency_s": 1.799
+    },
+    {
+      "model": "gpt-5.5",
+      "resolved_model": "gpt-5.5-2026-04-23",
+      "purpose": "adjudicate:dev-002:run0:attempt1:turn2",
+      "input_tokens": 2544,
+      "cached_input_tokens": 1536,
+      "output_tokens": 122,
+      "reasoning_tokens": 12,
+      "cost_usd": 0.009468,
+      "latency_s": 2.798
+    },
+    {
+      "model": "gpt-5.5",
+      "resolved_model": "gpt-5.5-2026-04-23",
+      "purpose": "adjudicate:dev-002:run0:attempt1:turn3",
+      "input_tokens": 4155,
+      "cached_input_tokens": 0,
+      "output_tokens": 92,
+      "reasoning_tokens": 14,
+      "cost_usd": 0.023535,
+      "latency_s": 2.956
+    },
+    {
+      "model": "gpt-5.5",
+      "resolved_model": "gpt-5.5-2026-04-23",
+      "purpose": "adjudicate:dev-002:run0:attempt1:turn4",
+      "input_tokens": 6378,
+      "cached_input_tokens": 3584,
+      "output_tokens": 245,
+      "reasoning_tokens": 34,
+      "cost_usd": 0.023112,
+      "latency_s": 3.673
+    },
+    {
+      "model": "gpt-5.5",
+      "resolved_model": "gpt-5.5-2026-04-23",
+      "purpose": "adjudicate:dev-002:run0:attempt1:turn5",
+      "input_tokens": 7652,
+      "cached_input_tokens": 5760,
+      "output_tokens": 125,
+      "reasoning_tokens": 98,
+      "cost_usd": 0.01609,
+      "latency_s": 4.233
+    },
+    {
+      "model": "gpt-5.5",
+      "resolved_model": "gpt-5.5-2026-04-23",
+      "purpose": "adjudicate:dev-002:run0:attempt1:turn6",
+      "input_tokens": 10559,
+      "cached_input_tokens": 6784,
+      "output_tokens": 751,
+      "reasoning_tokens": 516,
+      "cost_usd": 0.044797,
+      "latency_s": 12.3
+    },
+    {
+      "model": "gpt-5.5",
+      "resolved_model": "gpt-5.5-2026-04-23",
+      "purpose": "adjudicate:dev-002:run0:attempt1:turn7",
+      "input_tokens": 11708,
+      "cached_input_tokens": 9856,
+      "output_tokens": 478,
+      "reasoning_tokens": 272,
+      "cost_usd": 0.028528,
+      "latency_s": 8.355
+    },
+    {
+      "model": "gpt-5.5",
+      "resolved_model": "gpt-5.5-2026-04-23",
+      "purpose": "adjudicate:dev-002:run0:attempt1:turn8",
+      "input_tokens": 12571,
+      "cached_input_tokens": 11264,
+      "output_tokens": 1455,
+      "reasoning_tokens": 448,
+      "cost_usd": 0.055817,
+      "latency_s": 17.913
+    },
+    {
+      "model": "gpt-5.4-mini",
+      "resolved_model": "gpt-5.4-mini-2026-03-17",
+      "purpose": "claim_support:dev-002:f0",
+      "input_tokens": 1418,
+      "cached_input_tokens": 0,
+      "output_tokens": 169,
+      "reasoning_tokens": 76,
+      "cost_usd": 0.001824,
+      "latency_s": 2.048
+    },
+    {
+      "model": "gpt-5.4-mini",
+      "resolved_model": "gpt-5.4-mini-2026-03-17",
+      "purpose": "claim_support:dev-002:f1",
+      "input_tokens": 4789,
+      "cached_input_tokens": 0,
+      "output_tokens": 202,
+      "reasoning_tokens": 112,
+      "cost_usd": 0.00450075,
+      "latency_s": 2.273
+    },
+    {
+      "model": "gpt-5.4-mini",
+      "resolved_model": "gpt-5.4-mini-2026-03-17",
+      "purpose": "outcome_support:dev-002",
+      "input_tokens": 609,
+      "cached_input_tokens": 0,
+      "output_tokens": 185,
+      "reasoning_tokens": 122,
+      "cost_usd": 0.00128925,
+      "latency_s": 2.365
+    },
+    {
+      "model": "gpt-5.4-mini",
+      "resolved_model": "gpt-5.4-mini-2026-03-17",
+      "purpose": "claim_support:dev-002:f3",
+      "input_tokens": 4224,
+      "cached_input_tokens": 0,
+      "output_tokens": 315,
+      "reasoning_tokens": 230,
+      "cost_usd": 0.0045855,
+      "latency_s": 2.871
+    },
+    {
+      "model": "gpt-5.4-mini",
+      "resolved_model": "gpt-5.4-mini-2026-03-17",
+      "purpose": "claim_support:dev-002:f2",
+      "input_tokens": 3795,
+      "cached_input_tokens": 0,
+      "output_tokens": 354,
+      "reasoning_tokens": 277,
+      "cost_usd": 0.00443925,
+      "latency_s": 2.94
+    }
+  ],
+  "calculations": [
+    {
+      "calculation_id": "calc-1",
+      "operation": "hours_between",
+      "inputs": [],
+      "datetimes": [
+        "2026-04-10T14:00:00",
+        "2026-04-10T21:30:00"
+      ],
+      "result": 7.5,
+      "unit": "hours"
+    },
+    {
+      "calculation_id": "calc-2",
+      "operation": "days_between",
+      "inputs": [],
+      "datetimes": [
+        "2026-04-10",
+        "2026-04-30"
+      ],
+      "result": 20.0,
+      "unit": "days"
+    },
+    {
+      "calculation_id": "calc-3",
+      "operation": "days_between",
+      "inputs": [],
+      "datetimes": [
+        "2026-04-05",
+        "2026-04-10"
+      ],
+      "result": 5.0,
+      "unit": "days"
+    },
+    {
+      "calculation_id": "calc-4",
+      "operation": "days_between",
+      "inputs": [],
+      "datetimes": [
+        "2026-04-10",
+        "2026-04-25"
+      ],
+      "result": 15.0,
+      "unit": "days"
+    },
+    {
+      "calculation_id": "calc-5",
+      "operation": "subtract",
+      "inputs": [
+        {
+          "value": 10000.0,
+          "unit": "usd",
+          "source": "policy",
+          "ref": "travel-policy:5.4",
+          "matched_text": "$10,000,"
+        },
+        {
+          "value": 1200.0,
+          "unit": "usd",
+          "source": "evidence",
+          "ref": "form",
+          "matched_text": "claimed_amount: 1200.0"
+        }
+      ],
+      "datetimes": [],
+      "result": 8800.0,
+      "unit": "usd"
+    },
+    {
+      "calculation_id": "calc-6",
+      "operation": "subtract",
+      "inputs": [
+        {
+          "value": 24.0,
+          "unit": "hours",
+          "source": "policy",
+          "ref": "travel-policy:5.3",
+          "matched_text": "24 hours"
+        },
+        {
+          "value": 7.5,
+          "unit": "hours",
+          "source": "derived",
+          "ref": "calc-1",
+          "matched_text": "calc-1 = 7.5 hours"
+        }
+      ],
+      "datetimes": [],
+      "result": 16.5,
+      "unit": "hours"
+    },
+    {
+      "calculation_id": "calc-7",
+      "operation": "subtract",
+      "inputs": [
+        {
+          "value": 60.0,
+          "unit": "days",
+          "source": "policy",
+          "ref": "travel-policy:5.1",
+          "matched_text": "60 days"
+        },
+        {
+          "value": 20.0,
+          "unit": "days",
+          "source": "derived",
+          "ref": "calc-2",
+          "matched_text": "calc-2 = 20 days"
+        }
+      ],
+      "datetimes": [],
+      "result": 40.0,
+      "unit": "days"
+    },
+    {
+      "calculation_id": "calc-8",
+      "operation": "subtract",
+      "inputs": [
+        {
+          "value": 1200.0,
+          "unit": "usd",
+          "source": "evidence",
+          "ref": "receipt_laptop",
+          "matched_text": "$1,200.00"
+        },
+        {
+          "value": 100.0,
+          "unit": "usd",
+          "source": "policy",
+          "ref": "travel-policy:5.2",
+          "matched_text": "$100"
+        }
+      ],
+      "datetimes": [],
+      "result": 1100.0,
+      "unit": "usd"
+    }
+  ],
+  "policy_sections_read": [
+    "travel-policy:2.1",
+    "travel-policy:2.3",
+    "travel-policy:3.1",
+    "travel-policy:3.4",
+    "travel-policy:4.2",
+    "travel-policy:5.1",
+    "travel-policy:5.2",
+    "travel-policy:5.3",
+    "travel-policy:5.4"
+  ],
+  "policy_pages_viewed": [
+    "travel-policy:4"
+  ],
+  "error": null,
+  "duration_s": 60.69,
+  "cost_usd": 0.231144
+}

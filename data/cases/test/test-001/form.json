@@ -1,0 +1,20 @@
+{
+  "policy_number": "WTI-201100",
+  "insured_name": "Alex Morgan",
+  "policy_purchase_date": "2026-05-01",
+  "trip_start": "2026-06-01",
+  "trip_end": "2026-06-30",
+  "claim_type": "medical",
+  "incident_date": "2026-06-11",
+  "submission_date": "2026-06-28",
+  "claimed_amount": 12500.0,
+  "declared_conditions": [],
+  "incident_description": "Emergency appendectomy in Zurich.",
+  "attachments": [
+    {
+      "document_id": "invoice_1",
+      "file": "invoice.png",
+      "description": "Hospital invoice"
+    }
+  ]
+}

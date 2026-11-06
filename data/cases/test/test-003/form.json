@@ -1,0 +1,19 @@
+{
+  "policy_number": "WTI-201800",
+  "insured_name": "Alex Morgan",
+  "policy_purchase_date": "2026-08-20",
+  "trip_start": "2026-09-10",
+  "trip_end": "2026-09-24",
+  "claim_type": "travel_delay",
+  "incident_date": "2026-09-10",
+  "submission_date": "2026-09-25",
+  "claimed_amount": 150.0,
+  "incident_description": "Flight delayed overnight due to storms.",
+  "attachments": [
+    {
+      "document_id": "airline_letter",
+      "file": "delay_letter.txt",
+      "description": "Airline delay confirmation"
+    }
+  ]
+}

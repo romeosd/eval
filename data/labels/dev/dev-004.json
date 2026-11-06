@@ -1,0 +1,11 @@
+{
+  "case_id": "dev-004",
+  "expected_outcome": "DENY",
+  "expected_payable_amount": null,
+  "expected_sections": [
+    "4.3"
+  ],
+  "notes": "Cancellation 5 days after purchase.",
+  "synthetic": false,
+  "source_case_id": null
+}

@@ -1,0 +1,298 @@
+{
+  "cache_key": "c9a2b627556375e862ab",
+  "ingest_version": "1",
+  "documents": [
+    {
+      "document_id": "travel-policy",
+      "source_path": "/Users/ramyamer/Downloads/policy-adjudicator/data/policy/travel-policy.pdf",
+      "source_sha256": "da2c9a404ddc87afbe599f5e44b0e47d428b06bad21b6f0614e343e178a75f34",
+      "pages": [
+        {
+          "document_id": "travel-policy",
+          "page_number": 1,
+          "text": "Wanderly Travel Insurance - Policy Wording (Version 3.2, effective 1 January 2026)\n1 About this policy\nThis document sets out the cover provided to the insured person named on the\ncertificate of insurance. All amounts are in Australian dollars.\n1.1 How to read this policy\nWords in this policy have the meanings given in Section 2. Where a diagram in this\npolicy sets out a claims process, the diagram forms part of the policy wording.\n2 Definitions\n2.1 Trip\nThe period from the departure date to the return date on the certificate of insurance.\n2.2 Pre-existing condition\nAny illness or injury for which the insured person received treatment, medication\nor advice in the 24 months before the policy purchase date.\n2.3 Unattended\nLeft where the insured person cannot see the item and is not in a position to\nprevent it being taken.\nWanderly Policy Wording v3.2 - page 1\n",
+          "image_path": "/Users/ramyamer/Downloads/policy-adjudicator/.cache/policy/pages/c9a2b627556375e862ab/travel-policy/page-001.png",
+          "diagram": null,
+          "quarantined_spans": []
+        },
+        {
+          "document_id": "travel-policy",
+          "page_number": 2,
+          "text": "3 Cover and limits\n3.1 Benefit table\nThe maximum amounts payable per insured person per trip are:\nMedical and hospital expenses: $50,000.\nTrip cancellation: $5,000.\nLuggage and personal items: $3,000 in total and no more than $500 for any single item.\nTravel delay: $150 for each full 12 hours of delay, up to $600.\n3.2 Medical and hospital expenses\nWe pay reasonable overseas medical and hospital expenses for an illness or injury\nthat first occurs during the trip.\n3.3 Trip cancellation\nWe pay non-refundable trip costs if the trip is cancelled before departure for a\nreason outside the insured person's control, such as their own hospitalisation.\n3.4 Luggage and personal items\nWe pay for luggage and personal items stolen, lost or damaged during the trip, up\nto the limits in the benefit table. Theft claims must follow the process in 5.3.\n3.5 Travel delay\nWe pay the travel delay benefit if a scheduled departure is delayed by more than\n6 hours for a reason outside the insured person's control.\nWanderly Policy Wording v3.2 - page 2\n",
+          "image_path": "/Users/ramyamer/Downloads/policy-adjudicator/.cache/policy/pages/c9a2b627556375e862ab/travel-policy/page-002.png",
+          "diagram": null,
+          "quarantined_spans": []
+        },
+        {
+          "document_id": "travel-policy",
+          "page_number": 3,
+          "text": "4 Exclusions\n4.1 Pre-existing conditions\nWe do not pay claims arising from a pre-existing condition unless it was declared\nand accepted in writing when the policy was purchased.\n4.2 Unattended items\nWe do not pay for luggage or personal items stolen while unattended.\n4.3 Cancellation waiting period\nWe do not pay trip cancellation claims where the cancellation occurs within 14 days\nafter the policy purchase date.\n5 Making a claim\n5.1 Claim deadline\nClaims must be submitted within 60 days after the incident date. Claims submitted\nlater than this are not payable.\n5.2 Supporting documents\nReceipts or proof of ownership are required for any item or expense over $100.\nMedical claims require an itemised invoice from the treating provider.\nWanderly Policy Wording v3.2 - page 3\n",
+          "image_path": "/Users/ramyamer/Downloads/policy-adjudicator/.cache/policy/pages/c9a2b627556375e862ab/travel-policy/page-003.png",
+          "diagram": null,
+          "quarantined_spans": []
+        },
+        {
+          "document_id": "travel-policy",
+          "page_number": 4,
+          "text": "5.3 Theft of luggage and personal items\nTheft claims are assessed using the process shown in the diagram below.\n5.4 Referral to a senior assessor\nClaims with a total claimed amount over $10,000, or where documents conflict on a\nmaterial fact such as dates or amounts, are referred to a senior assessor and are\nnot decided automatically.\nWanderly Policy Wording v3.2 - page 4\n",
+          "image_path": "/Users/ramyamer/Downloads/policy-adjudicator/.cache/policy/pages/c9a2b627556375e862ab/travel-policy/page-004.png",
+          "diagram": {
+            "has_visual_content": true,
+            "title": "Figure 5.3 - Theft claim assessment",
+            "transcribed_text": "Theft of item reported\nPolice report obtained within 24 hours\nof discovering the theft?\nNo\nDecline claim\nYes\nWas the item attended\nat the time of theft?\nNo\nDecline claim\n(see 4.2)\nYes\nPay the item value, up to $500\nper item and $3,000 in total\n(see 3.1)",
+            "rules_expressed": [
+              "If a police report was not obtained within 24 hours of discovering the theft, decline the claim.",
+              "If the item was not attended at the time of theft, decline the claim (see 4.2).",
+              "If a police report was obtained within 24 hours of discovering the theft and the item was attended at the time of theft, pay the item value, up to $500 per item and $3,000 in total (see 3.1)."
+            ]
+          },
+          "quarantined_spans": []
+        }
+      ],
+      "sections": [
+        {
+          "section_id": "travel-policy:0",
+          "document_id": "travel-policy",
+          "number": "0",
+          "title": "Preamble",
+          "level": 1,
+          "parent_id": null,
+          "page_start": 1,
+          "page_end": 1,
+          "text": "Wanderly Travel Insurance - Policy Wording (Version 3.2, effective 1 January 2026)"
+        },
+        {
+          "section_id": "travel-policy:1",
+          "document_id": "travel-policy",
+          "number": "1",
+          "title": "About this policy",
+          "level": 1,
+          "parent_id": null,
+          "page_start": 1,
+          "page_end": 1,
+          "text": "This document sets out the cover provided to the insured person named on the\ncertificate of insurance. All amounts are in Australian dollars."
+        },
+        {
+          "section_id": "travel-policy:1.1",
+          "document_id": "travel-policy",
+          "number": "1.1",
+          "title": "How to read this policy",
+          "level": 2,
+          "parent_id": "travel-policy:1",
+          "page_start": 1,
+          "page_end": 1,
+          "text": "Words in this policy have the meanings given in Section 2. Where a diagram in this\npolicy sets out a claims process, the diagram forms part of the policy wording."
+        },
+        {
+          "section_id": "travel-policy:2",
+          "document_id": "travel-policy",
+          "number": "2",
+          "title": "Definitions",
+          "level": 1,
+          "parent_id": null,
+          "page_start": 1,
+          "page_end": 1,
+          "text": ""
+        },
+        {
+          "section_id": "travel-policy:2.1",
+          "document_id": "travel-policy",
+          "number": "2.1",
+          "title": "Trip",
+          "level": 2,
+          "parent_id": "travel-policy:2",
+          "page_start": 1,
+          "page_end": 1,
+          "text": "The period from the departure date to the return date on the certificate of insurance."
+        },
+        {
+          "section_id": "travel-policy:2.2",
+          "document_id": "travel-policy",
+          "number": "2.2",
+          "title": "Pre-existing condition",
+          "level": 2,
+          "parent_id": "travel-policy:2",
+          "page_start": 1,
+          "page_end": 1,
+          "text": "Any illness or injury for which the insured person received treatment, medication\nor advice in the 24 months before the policy purchase date."
+        },
+        {
+          "section_id": "travel-policy:2.3",
+          "document_id": "travel-policy",
+          "number": "2.3",
+          "title": "Unattended",
+          "level": 2,
+          "parent_id": "travel-policy:2",
+          "page_start": 1,
+          "page_end": 1,
+          "text": "Left where the insured person cannot see the item and is not in a position to\nprevent it being taken.\nWanderly Policy Wording v3.2 - page 1"
+        },
+        {
+          "section_id": "travel-policy:3",
+          "document_id": "travel-policy",
+          "number": "3",
+          "title": "Cover and limits",
+          "level": 1,
+          "parent_id": null,
+          "page_start": 2,
+          "page_end": 2,
+          "text": ""
+        },
+        {
+          "section_id": "travel-policy:3.1",
+          "document_id": "travel-policy",
+          "number": "3.1",
+          "title": "Benefit table",
+          "level": 2,
+          "parent_id": "travel-policy:3",
+          "page_start": 2,
+          "page_end": 2,
+          "text": "The maximum amounts payable per insured person per trip are:\nMedical and hospital expenses: $50,000.\nTrip cancellation: $5,000.\nLuggage and personal items: $3,000 in total and no more than $500 for any single item.\nTravel delay: $150 for each full 12 hours of delay, up to $600."
+        },
+        {
+          "section_id": "travel-policy:3.2",
+          "document_id": "travel-policy",
+          "number": "3.2",
+          "title": "Medical and hospital expenses",
+          "level": 2,
+          "parent_id": "travel-policy:3",
+          "page_start": 2,
+          "page_end": 2,
+          "text": "We pay reasonable overseas medical and hospital expenses for an illness or injury\nthat first occurs during the trip."
+        },
+        {
+          "section_id": "travel-policy:3.3",
+          "document_id": "travel-policy",
+          "number": "3.3",
+          "title": "Trip cancellation",
+          "level": 2,
+          "parent_id": "travel-policy:3",
+          "page_start": 2,
+          "page_end": 2,
+          "text": "We pay non-refundable trip costs if the trip is cancelled before departure for a\nreason outside the insured person's control, such as their own hospitalisation."
+        },
+        {
+          "section_id": "travel-policy:3.4",
+          "document_id": "travel-policy",
+          "number": "3.4",
+          "title": "Luggage and personal items",
+          "level": 2,
+          "parent_id": "travel-policy:3",
+          "page_start": 2,
+          "page_end": 2,
+          "text": "We pay for luggage and personal items stolen, lost or damaged during the trip, up\nto the limits in the benefit table. Theft claims must follow the process in 5.3."
+        },
+        {
+          "section_id": "travel-policy:3.5",
+          "document_id": "travel-policy",
+          "number": "3.5",
+          "title": "Travel delay",
+          "level": 2,
+          "parent_id": "travel-policy:3",
+          "page_start": 2,
+          "page_end": 2,
+          "text": "We pay the travel delay benefit if a scheduled departure is delayed by more than\n6 hours for a reason outside the insured person's control.\nWanderly Policy Wording v3.2 - page 2"
+        },
+        {
+          "section_id": "travel-policy:4",
+          "document_id": "travel-policy",
+          "number": "4",
+          "title": "Exclusions",
+          "level": 1,
+          "parent_id": null,
+          "page_start": 3,
+          "page_end": 3,
+          "text": ""
+        },
+        {
+          "section_id": "travel-policy:4.1",
+          "document_id": "travel-policy",
+          "number": "4.1",
+          "title": "Pre-existing conditions",
+          "level": 2,
+          "parent_id": "travel-policy:4",
+          "page_start": 3,
+          "page_end": 3,
+          "text": "We do not pay claims arising from a pre-existing condition unless it was declared\nand accepted in writing when the policy was purchased."
+        },
+        {
+          "section_id": "travel-policy:4.2",
+          "document_id": "travel-policy",
+          "number": "4.2",
+          "title": "Unattended items",
+          "level": 2,
+          "parent_id": "travel-policy:4",
+          "page_start": 3,
+          "page_end": 3,
+          "text": "We do not pay for luggage or personal items stolen while unattended."
+        },
+        {
+          "section_id": "travel-policy:4.3",
+          "document_id": "travel-policy",
+          "number": "4.3",
+          "title": "Cancellation waiting period",
+          "level": 2,
+          "parent_id": "travel-policy:4",
+          "page_start": 3,
+          "page_end": 3,
+          "text": "We do not pay trip cancellation claims where the cancellation occurs within 14 days\nafter the policy purchase date."
+        },
+        {
+          "section_id": "travel-policy:5",
+          "document_id": "travel-policy",
+          "number": "5",
+          "title": "Making a claim",
+          "level": 1,
+          "parent_id": null,
+          "page_start": 3,
+          "page_end": 3,
+          "text": ""
+        },
+        {
+          "section_id": "travel-policy:5.1",
+          "document_id": "travel-policy",
+          "number": "5.1",
+          "title": "Claim deadline",
+          "level": 2,
+          "parent_id": "travel-policy:5",
+          "page_start": 3,
+          "page_end": 3,
+          "text": "Claims must be submitted within 60 days after the incident date. Claims submitted\nlater than this are not payable."
+        },
+        {
+          "section_id": "travel-policy:5.2",
+          "document_id": "travel-policy",
+          "number": "5.2",
+          "title": "Supporting documents",
+          "level": 2,
+          "parent_id": "travel-policy:5",
+          "page_start": 3,
+          "page_end": 3,
+          "text": "Receipts or proof of ownership are required for any item or expense over $100.\nMedical claims require an itemised invoice from the treating provider.\nWanderly Policy Wording v3.2 - page 3"
+        },
+        {
+          "section_id": "travel-policy:5.3",
+          "document_id": "travel-policy",
+          "number": "5.3",
+          "title": "Theft of luggage and personal items",
+          "level": 2,
+          "parent_id": "travel-policy:5",
+          "page_start": 4,
+          "page_end": 4,
+          "text": "Theft claims are assessed using the process shown in the diagram below."
+        },
+        {
+          "section_id": "travel-policy:5.4",
+          "document_id": "travel-policy",
+          "number": "5.4",
+          "title": "Referral to a senior assessor",
+          "level": 2,
+          "parent_id": "travel-policy:5",
+          "page_start": 4,
+          "page_end": 4,
+          "text": "Claims with a total claimed amount over $10,000, or where documents conflict on a\nmaterial fact such as dates or amounts, are referred to a senior assessor and are\nnot decided automatically.\nWanderly Policy Wording v3.2 - page 4"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+2026-11-05 14:30:28,840 INFO    adjudicator.policy.ingest | Reusing processed policy index c9a2b627556375e862ab
+2026-11-05 14:30:28,893 INFO    adjudicator.runner | Run 20261105T033028-dev-2415c0: 2 cases (0 kept, 2 to run), policy index c9a2b627556375e862ab
+2026-11-05 14:30:30,587 INFO    httpx2 | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2026-11-05 14:30:30,675 INFO    httpx2 | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2026-11-05 14:30:32,184 INFO    httpx2 | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2026-11-05 14:30:32,222 INFO    httpx2 | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2026-11-05 14:30:32,396 INFO    httpx2 | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2026-11-05 14:30:32,698 INFO    httpx2 | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2026-11-05 14:30:33,703 INFO    httpx2 | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2026-11-05 14:30:33,709 INFO    httpx2 | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2026-11-05 14:30:33,713 INFO    httpx2 | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2026-11-05 14:30:33,994 INFO    httpx2 | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2026-11-05 14:30:34,058 INFO    httpx2 | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-11-05 14:30:34,059 ERROR   adjudicator.pipeline | dev-002 failed: Error code: 400 - Invalid schema for function 'calculate': context=('properties', 'unit'), $ref cannot have keywords {'description'}.
+2026-11-05 14:30:34,061 INFO    adjudicator.runner | dev-002 -> None (failed) $0.0024
+2026-11-05 14:30:34,416 INFO    httpx2 | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-11-05 14:30:34,417 ERROR   adjudicator.pipeline | dev-003 failed: Error code: 400 - Invalid schema for function 'calculate': context=('properties', 'unit'), $ref cannot have keywords {'description'}.
+2026-11-05 14:30:34,417 INFO    adjudicator.runner | dev-003 -> None (failed) $0.0024
+2026-11-05 14:30:34,419 INFO    adjudicator.runner | Run 20261105T033028-dev-2415c0 complete; spend this session $0.0048

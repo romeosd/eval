@@ -1,0 +1,12 @@
+{
+  "case_id": "dev-005",
+  "expected_outcome": "APPROVE",
+  "expected_payable_amount": 150.0,
+  "expected_sections": [
+    "3.5",
+    "3.1"
+  ],
+  "notes": "20h delay = one full 12h block = $150, though $300 was claimed.",
+  "synthetic": false,
+  "source_case_id": null
+}

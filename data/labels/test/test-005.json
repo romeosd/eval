@@ -1,0 +1,11 @@
+{
+  "case_id": "test-005",
+  "expected_outcome": "DENY",
+  "expected_payable_amount": null,
+  "expected_sections": [
+    "5.1"
+  ],
+  "notes": "Submitted 105 days after the incident.",
+  "synthetic": false,
+  "source_case_id": null
+}

@@ -1,0 +1,9 @@
+{
+  "case_id": "dev-007",
+  "expected_outcome": "REFER",
+  "expected_payable_amount": null,
+  "expected_sections": [],
+  "notes": "Required receipt is referenced but the file is missing.",
+  "synthetic": false,
+  "source_case_id": null
+}

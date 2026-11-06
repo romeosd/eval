@@ -1,0 +1,19 @@
+{
+  "policy_number": "WTI-106110",
+  "insured_name": "Priya Shah",
+  "policy_purchase_date": "2026-06-01",
+  "trip_start": "2026-07-10",
+  "trip_end": "2026-07-24",
+  "claim_type": "cancellation",
+  "incident_date": "2026-06-06",
+  "submission_date": "2026-06-12",
+  "claimed_amount": 1800.0,
+  "incident_description": "Cancelled on 6 June to attend a family funeral.",
+  "attachments": [
+    {
+      "document_id": "booking",
+      "file": "booking.txt",
+      "description": "Tour booking confirmation"
+    }
+  ]
+}

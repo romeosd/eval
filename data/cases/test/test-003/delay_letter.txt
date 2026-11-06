@@ -1,0 +1,4 @@
+Pacific Wings - Delay Notice
+Scheduled departure: 2026-09-10T22:00
+Actual departure: 2026-09-11T03:00
+Cause: weather

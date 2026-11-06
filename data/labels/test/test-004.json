@@ -1,0 +1,11 @@
+{
+  "case_id": "test-004",
+  "expected_outcome": "APPROVE",
+  "expected_payable_amount": 3200.0,
+  "expected_sections": [
+    "3.3"
+  ],
+  "notes": "Covered cancellation outside waiting period.",
+  "synthetic": false,
+  "source_case_id": null
+}

@@ -1,0 +1,11 @@
+{
+  "case_id": "dev-008",
+  "expected_outcome": "REFER",
+  "expected_payable_amount": null,
+  "expected_sections": [
+    "5.4"
+  ],
+  "notes": "Invoice date (20 Feb) conflicts with the incident date and precedes the trip.",
+  "synthetic": false,
+  "source_case_id": null
+}

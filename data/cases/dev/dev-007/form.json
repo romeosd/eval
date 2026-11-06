@@ -1,0 +1,19 @@
+{
+  "policy_number": "WTI-107450",
+  "insured_name": "Dana White",
+  "policy_purchase_date": "2026-01-05",
+  "trip_start": "2026-02-01",
+  "trip_end": "2026-02-10",
+  "claim_type": "luggage_lost",
+  "incident_date": "2026-02-05",
+  "submission_date": "2026-02-20",
+  "claimed_amount": 350.0,
+  "incident_description": "Lost my sunglasses at the airport in Fiji.",
+  "attachments": [
+    {
+      "document_id": "receipt_sunglasses",
+      "file": "receipt.png",
+      "description": "Sunglasses receipt"
+    }
+  ]
+}

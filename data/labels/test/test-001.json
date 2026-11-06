@@ -1,0 +1,11 @@
+{
+  "case_id": "test-001",
+  "expected_outcome": "REFER",
+  "expected_payable_amount": null,
+  "expected_sections": [
+    "5.4"
+  ],
+  "notes": "Over the $10,000 referral threshold.",
+  "synthetic": false,
+  "source_case_id": null
+}

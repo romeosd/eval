@@ -1,0 +1,12 @@
+{
+  "case_id": "dev-002",
+  "expected_outcome": "APPROVE",
+  "expected_payable_amount": 500.0,
+  "expected_sections": [
+    "5.3",
+    "3.1"
+  ],
+  "notes": "Theft with timely police report; single-item cap applies.",
+  "synthetic": false,
+  "source_case_id": null
+}

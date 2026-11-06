@@ -1,0 +1,142 @@
+{
+  "run_id": "20261105T035017-dev-77753e",
+  "split": "dev",
+  "started_at": "2026-11-05T03:50:17.741795+00:00",
+  "finished_at": "2026-11-05T03:53:20.704334+00:00",
+  "git_sha": null,
+  "git_dirty": null,
+  "settings_fingerprint": "3f2702bc12cb482c",
+  "behavior_fingerprint": "a65ee592483007b5",
+  "resume_count": 0,
+  "settings": {
+    "paths": {
+      "policy_dir": "/Users/ramyamer/Downloads/policy-adjudicator/data/policy",
+      "cases_dir": "/Users/ramyamer/Downloads/policy-adjudicator/data/cases",
+      "labels_dir": "/Users/ramyamer/Downloads/policy-adjudicator/data/labels",
+      "cache_dir": "/Users/ramyamer/Downloads/policy-adjudicator/.cache",
+      "cassette_dir": "/Users/ramyamer/Downloads/policy-adjudicator/.cassettes",
+      "runs_dir": "/Users/ramyamer/Downloads/policy-adjudicator/runs",
+      "prompts_dir": "/Users/ramyamer/Downloads/policy-adjudicator/prompts"
+    },
+    "openai": {
+      "api_key_env": "OPENAI_API_KEY",
+      "request_timeout_s": 180.0,
+      "max_retries": 3,
+      "store": false
+    },
+    "models": {
+      "adjudicator": {
+        "name": "gpt-5.5",
+        "reasoning_effort": "medium"
+      },
+      "judge": {
+        "name": "gpt-5.4-mini",
+        "reasoning_effort": "low"
+      },
+      "vision": {
+        "name": "gpt-5.4-mini",
+        "reasoning_effort": "low"
+      },
+      "injection_classifier": {
+        "name": "gpt-5.4-nano",
+        "reasoning_effort": "low"
+      }
+    },
+    "retrieval": {
+      "mode": "tools",
+      "search_top_k": 5,
+      "image_detail": "high"
+    },
+    "agent": {
+      "max_tool_turns": 24,
+      "max_attempts": 3,
+      "consensus_runs": 1
+    },
+    "validation": {
+      "claim_support_check": true,
+      "judge_sees_diagram_images": true,
+      "max_revalidations": 1,
+      "citation_min_similarity": 88.0,
+      "judge_timeout_s": 90.0,
+      "amount_tolerance": 0.01,
+      "min_quote_chars": 12
+    },
+    "audit": {
+      "tool_args_chars": 4000,
+      "tool_output_chars": 30000
+    },
+    "security": {
+      "heuristic_screen": true,
+      "classifier_screen": true,
+      "fail_closed": true,
+      "extra_patterns": []
+    },
+    "loading": {
+      "max_load_retries": 3,
+      "retry_backoff_s": 0.5
+    },
+    "run": {
+      "concurrency": 4,
+      "budget_usd": 15.0,
+      "require_pinned_models": false
+    },
+    "replay": {
+      "mode": "off"
+    },
+    "eval": {
+      "held_out_split": "test"
+    },
+    "ingest": {
+      "min_drawings_for_visual": 8,
+      "render_dpi": 144
+    },
+    "pricing": {
+      "gpt-5.5": {
+        "input": 5.0,
+        "cached_input": 0.5,
+        "output": 30.0
+      },
+      "gpt-5.4-mini": {
+        "input": 0.75,
+        "cached_input": 0.075,
+        "output": 4.5
+      },
+      "gpt-5.4-nano": {
+        "input": 0.2,
+        "cached_input": 0.02,
+        "output": 1.25
+      }
+    }
+  },
+  "prompt_hashes": {
+    "adjudicator": "72721b4b48ffcab6",
+    "claim_support_judge": "331c4a715e6bd909",
+    "diagram_transcription": "f63c548e6f20dbae",
+    "image_transcription": "4657b9e7ceec1a12",
+    "injection_classifier": "75a0c8a8d6e0f5f0"
+  },
+  "policy_cache_key": "c9a2b627556375e862ab",
+  "resolved_models": {
+    "gpt-5.4-mini": [
+      "gpt-5.4-mini-2026-03-17"
+    ],
+    "gpt-5.4-nano": [
+      "gpt-5.4-nano-2026-03-17"
+    ],
+    "gpt-5.5": [
+      "gpt-5.5-2026-04-23"
+    ]
+  },
+  "case_ids": [
+    "dev-002",
+    "dev-003"
+  ],
+  "case_filter": [
+    "dev-002",
+    "dev-003"
+  ],
+  "completed_case_ids": [
+    "dev-002",
+    "dev-003"
+  ]
+}

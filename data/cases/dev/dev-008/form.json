@@ -1,0 +1,20 @@
+{
+  "policy_number": "WTI-108020",
+  "insured_name": "Lee Chen",
+  "policy_purchase_date": "2026-01-15",
+  "trip_start": "2026-03-01",
+  "trip_end": "2026-03-21",
+  "claim_type": "medical",
+  "incident_date": "2026-03-10",
+  "submission_date": "2026-03-30",
+  "claimed_amount": 3100.0,
+  "declared_conditions": [],
+  "incident_description": "Broke my wrist skiing in Niseko on 10 March.",
+  "attachments": [
+    {
+      "document_id": "invoice_1",
+      "file": "invoice.png",
+      "description": "Hospital invoice"
+    }
+  ]
+}

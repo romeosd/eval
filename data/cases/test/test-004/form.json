@@ -1,0 +1,25 @@
+{
+  "policy_number": "WTI-202010",
+  "insured_name": "Alex Morgan",
+  "policy_purchase_date": "2026-01-10",
+  "trip_start": "2026-03-05",
+  "trip_end": "2026-03-19",
+  "claim_type": "cancellation",
+  "incident_date": "2026-02-20",
+  "submission_date": "2026-03-04",
+  "claimed_amount": 3200.0,
+  "declared_conditions": [],
+  "incident_description": "Hospitalised with pneumonia; had to cancel the cruise.",
+  "attachments": [
+    {
+      "document_id": "booking",
+      "file": "booking.txt",
+      "description": "Cruise booking"
+    },
+    {
+      "document_id": "discharge",
+      "file": "discharge.png",
+      "description": "Hospital discharge summary"
+    }
+  ]
+}

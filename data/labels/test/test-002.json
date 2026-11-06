@@ -1,0 +1,11 @@
+{
+  "case_id": "test-002",
+  "expected_outcome": "DENY",
+  "expected_payable_amount": null,
+  "expected_sections": [
+    "4.2"
+  ],
+  "notes": "Item was unattended (left on towel).",
+  "synthetic": false,
+  "source_case_id": null
+}

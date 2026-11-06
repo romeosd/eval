@@ -1,0 +1,166 @@
+{
+  "run_id": "20261105T035017-dev-77753e",
+  "split": "dev",
+  "n_cases": 2,
+  "n_independent_groups": 2,
+  "partial": true,
+  "decision_accuracy": 0.5,
+  "self_decided_accuracy": 0.5,
+  "amount_accuracy": null,
+  "mean_section_recall": 0.75,
+  "unsafe_approval_rate": 0.0,
+  "referral_rate": 0.0,
+  "forced_referral_rate": 0.0,
+  "failure_rate": 0.0,
+  "first_attempt_pass_rate": 0.5,
+  "total_cost_usd": 0.9658,
+  "mean_cost_usd": 0.4829,
+  "mean_duration_s": 121.76,
+  "cost_per_correct_usd": 0.9658,
+  "per_class": {
+    "APPROVE": {
+      "precision": null,
+      "recall": 0.0,
+      "support": 1
+    },
+    "DENY": {
+      "precision": 0.5,
+      "recall": 1.0,
+      "support": 1
+    },
+    "REFER": {
+      "precision": null,
+      "recall": null,
+      "support": 0
+    }
+  },
+  "confusion": {
+    "APPROVE": {
+      "APPROVE": 0,
+      "DENY": 1,
+      "REFER": 0,
+      "NONE": 0
+    },
+    "DENY": {
+      "APPROVE": 0,
+      "DENY": 1,
+      "REFER": 0,
+      "NONE": 0
+    },
+    "REFER": {
+      "APPROVE": 0,
+      "DENY": 0,
+      "REFER": 0,
+      "NONE": 0
+    }
+  },
+  "categories": {
+    "wrong_outcome": 1,
+    "correct": 1
+  },
+  "intervals": {
+    "decision_accuracy": {
+      "k": 1,
+      "n": 2,
+      "rate": 0.5,
+      "low": 0.09453120463920084,
+      "high": 0.9054687953607992
+    },
+    "self_decided_accuracy": {
+      "k": 1,
+      "n": 2,
+      "rate": 0.5,
+      "low": 0.09453120463920084,
+      "high": 0.9054687953607992
+    },
+    "amount_accuracy": {
+      "k": 0,
+      "n": 0,
+      "rate": null,
+      "low": null,
+      "high": null
+    },
+    "unsafe_approval_rate": {
+      "k": 0,
+      "n": 1,
+      "rate": 0.0,
+      "low": 0.0,
+      "high": 0.7934506882081973
+    },
+    "forced_referral_rate": {
+      "k": 0,
+      "n": 2,
+      "rate": 0.0,
+      "low": 0.0,
+      "high": 0.6576197760453506
+    },
+    "failure_rate": {
+      "k": 0,
+      "n": 2,
+      "rate": 0.0,
+      "low": 0.0,
+      "high": 0.6576197760453506
+    },
+    "first_attempt_pass_rate": {
+      "k": 1,
+      "n": 2,
+      "rate": 0.5,
+      "low": 0.09453120463920084,
+      "high": 0.9054687953607992
+    }
+  },
+  "slices": {
+    "expected_outcome": {
+      "APPROVE": {
+        "k": 0,
+        "n": 1,
+        "rate": 0.0,
+        "low": 0.0,
+        "high": 0.7934506882081973
+      },
+      "DENY": {
+        "k": 1,
+        "n": 1,
+        "rate": 1.0,
+        "low": 0.2065493117918027,
+        "high": 1.0
+      }
+    },
+    "origin": {
+      "original": {
+        "k": 1,
+        "n": 2,
+        "rate": 0.5,
+        "low": 0.09453120463920084,
+        "high": 0.9054687953607992
+      }
+    },
+    "injection": {
+      "absent": {
+        "k": 1,
+        "n": 2,
+        "rate": 0.5,
+        "low": 0.09453120463920084,
+        "high": 0.9054687953607992
+      }
+    },
+    "diagram_rule": {
+      "needed": {
+        "k": 1,
+        "n": 2,
+        "rate": 0.5,
+        "low": 0.09453120463920084,
+        "high": 0.9054687953607992
+      }
+    }
+  },
+  "failure_stages": {
+    "reasoning": 1
+  },
+  "check_failures": {
+    "claim_support": 4
+  },
+  "tool_errors": {},
+  "held_out_runs": 0,
+  "model_drift": []
+}

@@ -1,0 +1,48 @@
+[project]
+name = "policy-adjudicator"
+version = "0.1.0"
+description = "Evidence-grounded, fail-closed adjudication of applications against policy documents."
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=2.0",
+    "pydantic>=2.7",
+    "pymupdf>=1.24",
+    "rapidfuzz>=3.9",
+    "pillow>=10.3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5", "pyright>=1.1.380"]
+
+[project.scripts]
+adjudicator = "adjudicator.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/adjudicator"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF", "PL", "ANN"]
+ignore = ["PLR0913", "PLR2004", "ANN401", "PLR0911"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["ANN", "PLR2004"]
+
+[tool.pyright]
+include = ["src"]
+typeCheckingMode = "strict"
+pythonVersion = "3.12"
+reportMissingTypeStubs = false
+reportUnknownMemberType = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

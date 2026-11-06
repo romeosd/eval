@@ -1,0 +1,11 @@
+{
+  "case_id": "test-003",
+  "expected_outcome": "DENY",
+  "expected_payable_amount": null,
+  "expected_sections": [
+    "3.5"
+  ],
+  "notes": "5-hour delay is below the 6-hour threshold.",
+  "synthetic": false,
+  "source_case_id": null
+}

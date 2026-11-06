@@ -1,0 +1,20 @@
+{
+  "policy_number": "WTI-104233",
+  "insured_name": "Alex Morgan",
+  "policy_purchase_date": "2026-02-01",
+  "trip_start": "2026-03-01",
+  "trip_end": "2026-03-20",
+  "claim_type": "medical",
+  "incident_date": "2026-03-08",
+  "submission_date": "2026-03-25",
+  "claimed_amount": 2400.0,
+  "declared_conditions": [],
+  "incident_description": "Severe food poisoning in Bangkok; one night in hospital.",
+  "attachments": [
+    {
+      "document_id": "invoice_1",
+      "file": "invoice.png",
+      "description": "Hospital invoice"
+    }
+  ]
+}

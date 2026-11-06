@@ -1,0 +1,11 @@
+{
+  "case_id": "dev-003",
+  "expected_outcome": "DENY",
+  "expected_payable_amount": null,
+  "expected_sections": [
+    "5.3"
+  ],
+  "notes": "Police report filed 49 hours after discovery; rule exists only in the diagram.",
+  "synthetic": false,
+  "source_case_id": null
+}

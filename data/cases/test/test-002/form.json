@@ -1,0 +1,24 @@
+{
+  "policy_number": "WTI-201450",
+  "insured_name": "Alex Morgan",
+  "policy_purchase_date": "2026-07-01",
+  "trip_start": "2026-08-01",
+  "trip_end": "2026-08-15",
+  "claim_type": "luggage_theft",
+  "incident_date": "2026-08-03",
+  "submission_date": "2026-08-20",
+  "claimed_amount": 900.0,
+  "incident_description": "My phone was stolen at Barceloneta beach.",
+  "attachments": [
+    {
+      "document_id": "police_report",
+      "file": "police_report.png",
+      "description": "Police report"
+    },
+    {
+      "document_id": "receipt_phone",
+      "file": "receipt.png",
+      "description": "Phone receipt"
+    }
+  ]
+}

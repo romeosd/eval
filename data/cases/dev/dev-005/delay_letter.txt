@@ -1,0 +1,6 @@
+SkyBridge Airlines - Delay Confirmation
+Passenger: Jordan Kim
+Flight SB204 SYD-SIN
+Scheduled departure: 2026-07-02T08:00
+Actual departure: 2026-07-03T04:00
+Cause: aircraft technical fault

@@ -1,0 +1,20 @@
+{
+  "policy_number": "WTI-202300",
+  "insured_name": "Alex Morgan",
+  "policy_purchase_date": "2026-03-01",
+  "trip_start": "2026-03-28",
+  "trip_end": "2026-04-08",
+  "claim_type": "medical",
+  "incident_date": "2026-04-01",
+  "submission_date": "2026-07-15",
+  "claimed_amount": 800.0,
+  "declared_conditions": [],
+  "incident_description": "Sprained ankle hiking.",
+  "attachments": [
+    {
+      "document_id": "invoice_1",
+      "file": "invoice.png",
+      "description": "Clinic invoice"
+    }
+  ]
+}
